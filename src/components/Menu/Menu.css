@@ -1,6 +1,6 @@
 .menu {
     display: flex;
-    height: 100px;
-    width: 400px;
+    height: 10;
+    width: 30vh;
     background-color: blue;
 }
