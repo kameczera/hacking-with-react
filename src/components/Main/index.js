@@ -5,7 +5,6 @@ const Main = () => {
     return(
         <div className='main'>
             <Header />
-            <Music />
         </div>
     )
 }

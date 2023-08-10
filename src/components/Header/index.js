@@ -1,11 +1,12 @@
 import './Header.css'
+import lightmode from './sun.png'
 
 const Header = () => {
     return(
         <div className='header'>
-            <input className='searchMusic'></input>
             <div className='buttons'>
-                <button className='button signup'>Sign up</button>
+                <p>teste</p>
+                <img src=""></img>
                 <button className='button login'>Login</button>
             </div>
         </div>

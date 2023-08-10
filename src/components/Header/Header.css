@@ -20,8 +20,7 @@
 
 .button {
     display: block;
-    height: 50px;
+    height: 25px;
     width: 100px;
-    font-size: large;
     margin-right: 20px;
 }
