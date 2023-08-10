@@ -3,24 +3,41 @@
     width: 100%;
     height: 80px;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    background-color: beige;
 }
 
-.searchMusic {
-    display: block;
-    margin-left: 30px;
-    height: 30px;
-    width: 300px;
-}
-
-.buttons {
+.config {
     display: flex;
-    flex-direction: row;
+    padding: 0;
 }
 
-.button {
-    display: block;
-    height: 25px;
-    width: 100px;
-    margin-right: 20px;
+.selectGame {
+    height:100%;
+    
+}
+.game {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    height: 100%;
+}
+
+.switchMode {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.sunImage {
+    height:25px;
+    width:25px;
 }
