@@ -10,24 +10,31 @@ const Champions = () => {
         })
         .then(data => {
           let champions = [];
-          Object.keys(data.data).map((champion) => {champions.push(champion)});
-          setChampions(champions)
+          Object.entries(data.data).map((key) => {
+            champions.push({
+              name: key[0],
+              s: key[1],
+            });
+          });
+          setChampions(champions);
         })
     }
-
+    
     useEffect(() => {
       fetchChampions()
     }, [])
 
+    console.log(champions);
+    
     return(
       <div>
-      {champions.length > 0 && (
-        <ul>
-          {champions.map(champion => (
-            <li>{champion}</li>
-          ))}
-        </ul>
-      )}
+        {champions.length > 0 && (
+          <ul>
+            {champions.map(champion => (
+              <li key={champion.name}>{champion.name}</li>
+            ))}
+          </ul>
+        )}
     </div>
     )
 }
