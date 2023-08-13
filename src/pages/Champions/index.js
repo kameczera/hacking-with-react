@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react"
+import Header from "../../components/Header"
+import Menu from "../../components/Menu"
 
 const Champions = () => {
     const [champions, setChampions] = useState([])
@@ -28,6 +30,8 @@ const Champions = () => {
     
     return(
       <div>
+        <Header />
+        <Menu selected = "champions"/>
         {champions.length > 0 && (
           <ul>
             {champions.map(champion => (
