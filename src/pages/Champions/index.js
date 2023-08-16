@@ -31,7 +31,7 @@ const Champions = () => {
     return(
       <div>
         <Header />
-        <Menu selected = "champions"/>
+        <Menu selected = "Champions"/>
         {champions.length > 0 && (
           <ul>
             {champions.map(champion => (

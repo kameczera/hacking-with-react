@@ -2,21 +2,19 @@ import './Menu.css';
 
 const Menu = (props) => {
     let elements = [
-        <a className='menu-item' id='home'>Home</a>,
-        <a href='http://localhost:3000/champions' className='menu-item' id='champions'>Champion</a>,
-        <a className='menu-item' id='leaderboards'>Leaderboards</a>,
-        <a className='menu-item' id='games'>Games</a>,
+        {nome: "Home", link: "http://localhost:3000"},
+        {nome: "Champions", link: "http://localhost:3000/champions"},
+        {nome: "Leaderboard", link: "http://localhost:3000/leaderboard"},
+        {nome: "Games", link: "http://localhost:3000/games"},
     ]
-    console.log(elements[0].props.id);
-    console.log(props.selected);
-    // elements = elements.map((element) => {
-    //     if(props.selected == element.props) return element.props += " selected";
-    //     else return element;
-    // })
 
+    console.log(props.selected);
     return(
         <div className='menu'>
-            {elements}
+            {elements.map((element) => {
+                if(props.selected == element.nome) return <button className=''><a className="menu-item" id='menu-selected' href={element.link}>{element.nome}</a></button>;
+                else return <button><a className="menu-item" href={element.link}>{element.nome}</a></button>;
+            })}
         </div>
     )
 }

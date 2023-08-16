@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Menu />
+      <Menu selected="Home"/>
       <Main />
     </div>
   );

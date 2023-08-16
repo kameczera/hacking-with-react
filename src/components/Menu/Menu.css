@@ -6,6 +6,11 @@
 
 .menu-item {
     padding: 10px;
+    background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
 }
 
 #menu-selected {
