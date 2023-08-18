@@ -7,6 +7,7 @@ import ChampionButton from "./ChampionButton";
 
 const Champions = () => {
   const [champions, setChampions] = useState([]);
+  const [input, setInput] = useState([]);
 
   const fetchChampions = () => {
     fetch(
@@ -37,9 +38,12 @@ const Champions = () => {
       <Menu selected="Champions" />
       <div className="lists">
         <div className="searchChampion">
-          {champions.map((champion) => (
-            <ChampionButton name={champion.name} />
-          ))}
+          <input className="input-searchChampion" onChange={input => setInput(input.target.value.toLowerCase())}></input>
+          {champions.map((champion) => {
+            if(champion.name.toLowerCase().match(input)){
+                return <ChampionButton name={champion.name} filter={input}/>
+            }
+          })}
         </div>
         <table>
           <thead>

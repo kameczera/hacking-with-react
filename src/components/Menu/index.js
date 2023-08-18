@@ -8,7 +8,6 @@ const Menu = (props) => {
         {nome: "Games", link: "http://localhost:3000/games"},
     ]
 
-    console.log(props.selected);
     return(
         <div className='menu'>
             {elements.map((element) => {

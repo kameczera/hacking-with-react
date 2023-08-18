@@ -1,5 +1,20 @@
-.bt-champion {
-    display: block;
+.link-champion {
+    display: flex;
+    flex-direction: column;
     width: 80px;
     height: 80px;
+    background: none;
+    border: none;
+}
+
+.championName {
+    white-space: nowrap;
+    font-size: small;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.a-championImage{
+    width: 40px;
+    height:40px;
 }
