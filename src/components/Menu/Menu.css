@@ -4,15 +4,24 @@
     background-color:cadetblue;
 }
 
-.menu-item {
-    padding: 10px;
-    background: none;
-	color: inherit;
-	border: none;
-	font: inherit;
-	cursor: pointer;
-}
-
 #menu-selected {
     color: white;
+    border-bottom-width: 10px;
+}
+
+.menu-button {
+    display: flex;
+    padding: 15px;
+    border: none;
+    border-bottom: 20px;
+    background: none;
+	font: inherit;
+}
+
+.menu-item {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
 }

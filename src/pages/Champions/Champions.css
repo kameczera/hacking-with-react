@@ -1,0 +1,17 @@
+table {
+    display: inline-block;
+}
+
+.lists {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-shrink: inherit;
+    flex-grow: 0;
+}
+
+.searchChampion {
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+}

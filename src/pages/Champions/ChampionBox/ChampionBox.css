@@ -1,0 +1,17 @@
+.championBox {
+    align-items: center;
+    width: 100%;
+}
+
+.championImage {
+    height: 32px;
+    margin-right: 5px;
+}
+
+.champion {
+    display: flex;
+}
+
+.rank {
+    width: 100%;
+}

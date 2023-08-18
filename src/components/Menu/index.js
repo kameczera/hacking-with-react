@@ -12,8 +12,8 @@ const Menu = (props) => {
     return(
         <div className='menu'>
             {elements.map((element) => {
-                if(props.selected == element.nome) return <button className=''><a className="menu-item" id='menu-selected' href={element.link}>{element.nome}</a></button>;
-                else return <button><a className="menu-item" href={element.link}>{element.nome}</a></button>;
+                if(props.selected == element.nome) return <button className='menu-button'><a className="menu-item" id='menu-selected' href={element.link}>{element.nome}</a></button>;
+                else return <button className='menu-button'><a className="menu-item" href={element.link}>{element.nome}</a></button>;
             })}
         </div>
     )
