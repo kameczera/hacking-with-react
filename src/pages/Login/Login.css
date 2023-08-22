@@ -1,0 +1,56 @@
+.login {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inputBox {
+    position: relative;
+    width: 250px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: #1C1C1F;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.inputBox span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255,255,255,0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span {
+    color: white;
+    transform: translateX(5px) translateY(-20px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1C1C1F;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    letter-spacing: 0.2em;
+}
+
+.inputBox input:focus,
+.inputBox input:valid
+{
+    border: 1px solid #FFFFFF;
+}

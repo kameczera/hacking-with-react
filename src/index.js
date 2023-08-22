@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import Champions from './pages/Champions';
 import reportWebVitals from './reportWebVitals';
+import Login from './pages/Login';
+import Builds from './pages/Builds';
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
 }from "react-router-dom";
-import Builds from './pages/Builds';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
     path: "builds",
     element: <Builds />,
   },
+  {
+    path: "login",
+    element: <Login />
+  }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

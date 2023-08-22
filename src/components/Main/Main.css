@@ -3,13 +3,15 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: #1C1C1F;
 }
 
 .inputMain {
     display: flex;
     padding: 20px;
-    background-color: beige;
+    background-color: #31313C;
     border-radius: 50px;
+    color: #FFFFFF;
 }
 
 .searchPlayer {

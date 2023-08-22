@@ -1,11 +1,11 @@
 .menu {
     display: flex;
     justify-content: center;
-    background-color:cadetblue;
+    background-color:#5383E8;
 }
 
 #menu-selected {
-    color: white;
+    color: #FFFFFF;
     border-bottom-width: 10px;
 }
 
@@ -20,6 +20,7 @@
 
 .menu-item {
     text-decoration: none;
+    color: #A5ACB8;
 }
 
 a:visited {
