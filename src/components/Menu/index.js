@@ -4,8 +4,7 @@ const Menu = (props) => {
     let elements = [
         {nome: "Home", link: "http://localhost:3000"},
         {nome: "Champions", link: "http://localhost:3000/champions"},
-        {nome: "Leaderboard", link: "http://localhost:3000/leaderboard"},
-        {nome: "Games", link: "http://localhost:3000/games"},
+        {nome: "Builds", link: "http://localhost:3000/builds"},
     ]
 
     return(

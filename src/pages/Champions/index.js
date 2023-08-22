@@ -40,8 +40,14 @@ const Champions = () => {
         <div className="searchChampion">
           <input className="input-searchChampion" onChange={input => setInput(input.target.value.toLowerCase())}></input>
           {champions.map((champion) => {
+            const path = "/" + champion.name;
+            
             if(champion.name.toLowerCase().match(input)){
-                return <ChampionButton name={champion.name} filter={input}/>
+                return (
+                <>
+                  <ChampionButton name={champion.name} filter={input} />
+                </>
+                )
             }
           })}
         </div>

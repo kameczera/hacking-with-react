@@ -9,6 +9,7 @@ import {
   RouterProvider,
   Route,
 }from "react-router-dom";
+import Builds from './pages/Builds';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,11 @@ const router = createBrowserRouter([
   {
     path: "champions",
     element: <Champions />,
-  }
+  },
+  {
+    path: "builds",
+    element: <Builds />,
+  },
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
