@@ -8,7 +8,7 @@ const Header = () => {
             <button className="game valorant">Valorant</button>
         </div>
         <div className="buttons config">
-            <button className="configs login"><a href="http://localhost:3000/login">Login</a></button>
+            <button className="configs login-button"><a href="http://localhost:3000/login">Login</a></button>
             <button className="configs switchMode"><img className="sunImage" src="/assets/images/sun.png"></img></button>
         </div>
     </div>
